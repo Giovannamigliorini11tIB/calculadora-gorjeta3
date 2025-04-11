@@ -90,7 +90,12 @@ main{
     background-color: var(--green-800);
     color: var(--white);
 }
-
+.conta input ::-webkit-inner-spin-button,
+  .pessoas input ::-webkit-inner-spin-button,
+  .gorjeta #outra ::-webkit-inner-spin-button{
+      display: none;
+      cursor: pointer;
+  }
 .gorjeta #outra{
     width: 100%;
 }
