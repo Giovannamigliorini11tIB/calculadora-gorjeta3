@@ -94,3 +94,6 @@ main{
 .gorjeta #outra{
     width: 100%;
 }
+.pessoas #erro{
+    display: none;
+}
