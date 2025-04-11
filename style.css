@@ -161,3 +161,10 @@ main section{
 .gorjeta div{
     grid-template-columns: 1fr 1fr 1fr;
 }
+.resultados{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 2.5rem;
+}
