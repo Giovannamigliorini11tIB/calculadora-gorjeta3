@@ -57,3 +57,24 @@ function calcularValores() {
     if (campoTotal) campoTotal.textContent = `R$ ${valorTotal.toFixed(2)}`;
   }
 }
+
+const btnLimpar = document.querySelector(".resultados button");
+btnLimpar.onclick = function () {
+  campoConta.value = "";
+  campoPessoas.value = "";
+  inputOutroPercentual.value = "";
+
+  botoesPercentual.forEach(b => b.classList.remove("selecionado"));
+
+  totalConta = 0;
+  qtdPessoas = 0;
+  percentualGorjeta = 0;
+
+  const campoGorjeta = document.querySelector(".gorjeta-total > strong");
+  const campoTotal = document.querySelector(".total > strong");
+  if (campoGorjeta) campoGorjeta.textContent = "R$ 0.00";
+  if (campoTotal) campoTotal.textContent = "R$ 0.00";
+
+  const avisoErro = document.querySelector("#erro");
+  if (avisoErro) avisoErro.style.display = "none";
+};
